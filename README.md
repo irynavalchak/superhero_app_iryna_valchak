@@ -33,7 +33,7 @@ This is a web application that allows you to manage a database of superheroes.
     ```
 3.  Start the backend server:
     ```sh
-    npm start
+    npm run start
     ```
 
 ### Frontend
