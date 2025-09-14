@@ -1,0 +1,35 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.add-button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 6px 6px 12px #c5c9d2, -6px -6px 12px #fbffff;
+  transition: all 0.3s ease;
+}
+
+.add-button:hover {
+  box-shadow: inset 6px 6px 12px #c5c9d2, inset -6px -6px 12px #fbffff;
+}
