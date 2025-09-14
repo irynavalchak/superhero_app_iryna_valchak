@@ -31,11 +31,7 @@ This is a web application that allows you to manage a database of superheroes.
     ```sh
     npm install
     ```
-3.  Create a `.env` file in the `backend` directory with the following content:
-    ```
-    MONGO_URI=your_mongodb_connection_string
-    ```
-4.  Start the backend server:
+3.  Start the backend server:
     ```sh
     npm start
     ```

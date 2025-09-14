@@ -1,26 +1,27 @@
 import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 import SuperheroList from "../components/SuperheroList/SuperheroList";
-import SuperheroForm from "../components/SuperheroForm";
+import SuperheroForm from "../components/SuperheroForm/SuperheroForm";
 import { ISuperhero } from "../types";
 
-const customStyles = {
+const customStyles: Modal.Styles = {
   overlay: {
-    backgroundColor: 'rgba(0, 0, 0, 0.75)'
+    backgroundColor: 'rgba(0, 0, 0, 0.75)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
+    position: 'relative',
+    inset: 'auto',
     border: 'none',
     background: '#e0e5ec',
     borderRadius: '10px',
     padding: '20px',
     maxWidth: '800px',
-    width: '90%'
+    width: '90%',
+    maxHeight: '90vh',
+    overflowY: 'auto',
   },
 };
 

@@ -4,25 +4,26 @@ import Modal from 'react-modal';
 import { fetchSuperhero } from '../api/superheroes';
 import { ISuperhero } from '../types';
 import SuperheroDetails from '../components/SuperheroDetails/SuperheroDetails';
-import SuperheroForm from '../components/SuperheroForm';
+import SuperheroForm from '../components/SuperheroForm/SuperheroForm';
 
-const customStyles = {
+const customStyles: Modal.Styles = {
   overlay: {
-    backgroundColor: 'rgba(0, 0, 0, 0.75)'
+    backgroundColor: 'rgba(0, 0, 0, 0.75)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
+    position: 'relative',
+    inset: 'auto',
     border: 'none',
     background: '#fff',
     borderRadius: '10px',
     padding: '20px',
     maxWidth: '800px',
-    width: '90%'
+    width: '90%',
+    maxHeight: '90vh',
+    overflowY: 'auto',
   },
 };
 

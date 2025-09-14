@@ -1,5 +1,5 @@
 import { fetchSuperheroes, deleteSuperhero } from "../../api/superheroes";
-import Pagination from "../Pagination";
+import Pagination from "../Pagination/Pagination";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ISuperhero } from "../../types";
