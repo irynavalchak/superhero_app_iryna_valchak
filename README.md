@@ -51,8 +51,6 @@ This is a web application that allows you to manage a database of superheroes.
     npm start
     ```
 
-## Assumptions
-
-- The user has Node.js and MongoDB installed on their system.
+## Additional
 - The backend server runs on `http://localhost:5000`.
 - The frontend development server runs on `http://localhost:3000`.
