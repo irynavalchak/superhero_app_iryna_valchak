@@ -31,7 +31,7 @@ const SuperheroList: React.FC = () => {
         {superheroes?.map((hero) => (
           <Link to={`/hero/${hero._id}`} className="superhero-list__item" key={hero._id}>
             <img
-              src={`http://localhost:8000/${hero.images[0]}`}
+              src={`http://localhost:5000/${hero.images[0]}`}
               alt={hero.nickname}
               className="superhero-list__image"
             />

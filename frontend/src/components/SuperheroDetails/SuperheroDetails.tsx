@@ -18,7 +18,7 @@ const SuperheroDetails: React.FC<Props> = ({ hero, onClose, onEdit }) => {
       <div className="superhero-details__content">
         <div className="superhero-details__images">
           {hero.images && hero.images.map((image: string, index: number) => (
-            <img key={index} src={`http://localhost:8000/${image}`} alt={`${hero.nickname} ${index + 1}`} />
+            <img key={index} src={`http://localhost:5000/${image}`} alt={`${hero.nickname} ${index + 1}`} />
           ))}
         </div>
         <div className="superhero-details__info">

@@ -150,7 +150,7 @@ export default function SuperheroForm({ existingHero, onSave, onCancel }: Props)
         <div className="superhero-form__image-previews">
           {existingImages.map((image, idx) => (
             <div key={idx} className="superhero-form__image-preview">
-              <img src={`http://localhost:8000/${image}`} alt="existing" className="superhero-form__existing-image"/>
+              <img src={`http://localhost:5000/${image}`} alt="existing" className="superhero-form__existing-image"/>
               <button type="button" onClick={() => handleRemoveImage(image)} className="superhero-form__remove-image">X</button>
             </div>
           ))}

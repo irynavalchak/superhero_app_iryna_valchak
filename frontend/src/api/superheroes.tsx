@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8000/api/superheroes";
+const API_URL = "http://localhost:5000/api/superheroes";
 
 export const fetchSuperheroes = async (page = 1, limit = 5) => {
   const res = await fetch(`${API_URL}?page=${page}&limit=${limit}`);
@@ -15,10 +15,9 @@ export const fetchSuperhero = async (id: string) => {
 //   return res.json();
 // };
 export const createSuperhero = async (formData: FormData) => {
-  const res = await fetch("http://localhost:8000/api/superheroes", {
+  const res = await fetch("http://localhost:5000/api/superheroes", {
     method: "POST",
     body: formData,
-    // Не додавайте headers: { "Content-Type": ... }
   });
   if (!res.ok) throw new Error("Failed to create superhero");
   return await res.json();

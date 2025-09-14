@@ -13,7 +13,7 @@ describe('fetchSuperheroes', () => {
 
     const result = await fetchSuperheroes();
 
-    expect(global.fetch).toHaveBeenCalledWith('http://localhost:8000/api/superheroes?page=1&limit=5');
+    expect(global.fetch).toHaveBeenCalledWith('http://localhost:5000/api/superheroes?page=1&limit=5');
     expect(result).toEqual(mockResponse);
   });
 
